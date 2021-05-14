@@ -1,0 +1,76 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 32px;
+    /* Sunt un coment in CSS */
+    font-size: 16px;
+    font-size: 1px;
+}
+
+p {
+    font-size: 72px;
+    color: red;
+    font-family: sans-serif, monospace;
+    background-color: grey;
+    /* display: inline; */
+    width: 200px;
+    /* height: 10px; reomand sa eviatati sa-l folositi*/
+
+}
+
+a{
+    background-color: #2b2922;
+    color: #ffffff;
+    width: 360px; /* latime */
+    height: 40px;
+    /* elementele inline nu suporta proprietati de block
+    ca un element inline sa le suporte, trebuie sa il transformam 
+    in block sau inline-block */
+    /* blockurile stau pe proprieole randuri, inline-block putin din fiecare, suporta prop unui block dar sta pe linii */
+    display: inline-block;
+    text-decoration: none;
+    font-style:italic;
+}
+
+span {
+    background-color: #2C8C99;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 35px; /* prima valoare se aplica sus si jos 
+    iar cea de a doua in dreapta si stanga , a traia valoare jos prima devine doar sus mijloc se pastreaza
+    la patru valori 1 sus 2 dreapta 3 jos 4 stanga*/
+    /* border: red 10px dotted; */
+    margin: 400px 0;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+#cartof {
+    background-color: blue;
+    /* nu folositi id pentru stilizare */
+}
+
+.cartof {
+    background-color: black;
+    
+}
+
+/*
+prioritatea in css: 
+CSS inline - cea mai mare prioritate
+id - poate fi rescris doar de css inline
+class - e rescris si de ID si de inline
+element - poate fi rescris de orice
+
+inline > id > class > element
+ */
+
+ /* o pagina intr-un tabel, folosim clasele, nu se folosesc ambele width si height pt imagine */
+ /* nu folositi nici o prop de css pe care nu am facut o astazi sau din cel din pdf*/
+
+ .image {
+     height: 200px;
+ }
